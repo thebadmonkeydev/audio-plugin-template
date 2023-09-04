@@ -17,6 +17,4 @@ $ cmake --build build
 
 The first run will take the most time because the dependencies (CPM, JUCE, and googletest) need to be downloaded.
 
-To run clang-format on every commit, in the main directory execute
-
 Don't forget to change "YourPluginName" to, well, your plugin name everywhere
