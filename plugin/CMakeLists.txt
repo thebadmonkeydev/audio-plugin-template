@@ -9,7 +9,7 @@ set(INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/YourPluginName")
 
 # Adds a plugin target (that's basically what the Projucer does).
 juce_add_plugin(${PROJECT_NAME}
-    COMPANY_NAME MyCompany # change this
+    COMPANY_NAME BadMonkeyAudio # change this
     IS_SYNTH FALSE # may change this
     NEEDS_MIDI_INPUT FALSE # may change this
     NEEDS_MIDI_OUTPUT FALSE # may change this

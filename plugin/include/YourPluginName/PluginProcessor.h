@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef _JUCE_PLUGIN_EDITOR_H_
-#define _JUCE_PLUGIN_EDITOR_H_
+#ifndef _JUCE_PLUGIN_PROCESSOR_H_
+#define _JUCE_PLUGIN_PROCESSOR_H_
 
 #include <juce_audio_processors/juce_audio_processors.h>
 

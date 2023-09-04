@@ -3,6 +3,7 @@
 #ifndef _JUCE_PLUGIN_EDITOR_H_
 #define _JUCE_PLUGIN_EDITOR_H_
 
+#include <juce_audio_processors/juce_audio_processors.h>
 #include "PluginProcessor.h"
 
 namespace audio_plugin {

@@ -19,7 +19,7 @@ target_include_directories(${PROJECT_NAME}
 # Thanks to the fact that we link against the gtest_main library, we don't have to write the main function ourselves.
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
-        AudioPlugin
+        YourPluginName
         GTest::gtest_main)
 
 # Adds googletest-specific CMake commands at our disposal.
