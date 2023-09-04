@@ -1,19 +1,19 @@
-#include "YourPluginName/PluginEditor.h"
-#include "YourPluginName/PluginProcessor.h"
+#include "your_plugin_name/plugin_editor.h"
+#include "your_plugin_name/plugin_processor.h"
 
 namespace audio_plugin {
-  AudioPluginAudioProcessorEditor::AudioPluginAudioProcessorEditor(
-      AudioPluginAudioProcessor &p)
-    : AudioProcessorEditor(&p), processorRef(p) {
+  AudioProcessorEditor::AudioProcessorEditor(
+      AudioProcessor &p)
+    : juce::AudioProcessorEditor(&p), processorRef(p) {
       juce::ignoreUnused(processorRef);
       // Make sure that before the constructor has finished, you've set the
       // editor's size to whatever you need it to be.
       setSize(400, 300);
     }
 
-  AudioPluginAudioProcessorEditor::~AudioPluginAudioProcessorEditor() {}
+  AudioProcessorEditor::~AudioProcessorEditor() {}
 
-  void AudioPluginAudioProcessorEditor::paint(juce::Graphics &g) {
+  void AudioProcessorEditor::paint(juce::Graphics &g) {
     // (Our component is opaque, so we must completely fill the background with a
     // solid colour)
     g.fillAll(
@@ -25,7 +25,7 @@ namespace audio_plugin {
         juce::Justification::centred, 1);
   }
 
-  void AudioPluginAudioProcessorEditor::resized() {
+  void AudioProcessorEditor::resized() {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
   }

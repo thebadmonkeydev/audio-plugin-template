@@ -4,13 +4,13 @@
 #define _JUCE_PLUGIN_EDITOR_H_
 
 #include <juce_audio_processors/juce_audio_processors.h>
-#include "PluginProcessor.h"
+#include "plugin_processor.h"
 
 namespace audio_plugin {
-  class AudioPluginAudioProcessorEditor : public juce::AudioProcessorEditor {
+  class AudioProcessorEditor : public juce::AudioProcessorEditor {
     public:
-      explicit AudioPluginAudioProcessorEditor(AudioPluginAudioProcessor &);
-      ~AudioPluginAudioProcessorEditor() override;
+      explicit AudioProcessorEditor(AudioProcessor &);
+      ~AudioProcessorEditor() override;
 
       void paint(juce::Graphics &) override;
       void resized() override;
@@ -18,9 +18,9 @@ namespace audio_plugin {
     private:
       // This reference is provided as a quick way for your editor to
       // access the processor object that created it.
-      AudioPluginAudioProcessor &processorRef;
+      AudioProcessor &processorRef;
 
-      JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(AudioPluginAudioProcessorEditor)
+      JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(AudioProcessorEditor)
   };
 } // namespace audio_plugin
 #endif
