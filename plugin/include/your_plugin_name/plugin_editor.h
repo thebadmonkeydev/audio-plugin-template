@@ -6,7 +6,7 @@
 #include <juce_audio_processors/juce_audio_processors.h>
 #include "plugin_processor.h"
 
-namespace audio_plugin {
+namespace your_plugin_name {
   class AudioProcessorEditor : public juce::AudioProcessorEditor {
     public:
       explicit AudioProcessorEditor(AudioProcessor &);

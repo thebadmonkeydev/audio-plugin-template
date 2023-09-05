@@ -1,7 +1,7 @@
 #include "your_plugin_name/plugin_editor.h"
 #include "your_plugin_name/plugin_processor.h"
 
-namespace audio_plugin {
+namespace your_plugin_name {
   AudioProcessorEditor::AudioProcessorEditor(
       AudioProcessor &p)
     : juce::AudioProcessorEditor(&p), processorRef(p) {

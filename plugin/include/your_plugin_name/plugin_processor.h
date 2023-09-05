@@ -5,7 +5,7 @@
 
 #include <juce_audio_processors/juce_audio_processors.h>
 
-namespace audio_plugin {
+namespace your_plugin_name {
   class AudioProcessor : public juce::AudioProcessor {
     public:
       AudioProcessor();

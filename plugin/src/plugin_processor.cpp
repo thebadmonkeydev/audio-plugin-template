@@ -1,7 +1,7 @@
 #include "your_plugin_name/plugin_processor.h"
 #include "your_plugin_name/plugin_editor.h"
 
-namespace audio_plugin {
+namespace your_plugin_name {
   AudioProcessor::AudioProcessor()
     : juce::AudioProcessor(
         BusesProperties()
@@ -162,5 +162,5 @@ namespace audio_plugin {
 // This creates new instances of the plugin.
 // This function definition must be in the global namespace.
 juce::AudioProcessor *JUCE_CALLTYPE createPluginFilter() {
-  return new audio_plugin::AudioProcessor();
+  return new your_plugin_name::AudioProcessor();
 }
